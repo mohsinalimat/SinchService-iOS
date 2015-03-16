@@ -1,0 +1,6 @@
+.DS_Store
+xcuserdata
+*.xccheckout
+*.xcodeproj
+
+build/
