@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SinchService"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.platform     = :ios, '6.0'
 
   s.summary      = "SinchService provides the class SINService which is a high-level wrapper around the Sinch iOS SDK"
@@ -10,13 +10,13 @@ Pod::Spec.new do |s|
   SinchService provides the class SINService which is a high-level wrapper around the Sinch iOS SDK.
   DESC
 
-  s.homepage     = "http://www.sinch.com"
+  s.homepage     = "https://github.com/sinch/SinchService-iOS"
 
   s.author       = { "Christoffer Ahlbin" => "christoffer@sinch.com" }
 
   s.license      = { :type => 'Apache' }
 
-  s.source       = { :git => 'https://github.com/sinch/SinchService-iOS.git', :tag => '1.0.0' }
+  s.source       = { :git => 'https://github.com/sinch/SinchService-iOS.git', :tag => '1.0.1' }
   s.public_header_files = 'SinchService/SINService.h,SinchService/SinchService.h'
   s.source_files = 'SinchService/*.{h,m}'
 
