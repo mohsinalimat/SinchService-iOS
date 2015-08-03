@@ -94,4 +94,7 @@
 
 - (void)service:(id<SINService>)service requiresRegistrationCredentials:(id<SINClientRegistration>)registrationCallback;
 
+// Delegate is notified of the notification result _after_ it's been relayed to the underlying SINClient.
+- (void)service:(id<SINService>)service didReceiveNotification:(id<SINNotificationResult>)notificationResult;
+
 @end

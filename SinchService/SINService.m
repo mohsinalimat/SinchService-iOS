@@ -344,7 +344,10 @@ static NSString *const SINServiceUserIdKey = @"userId";
 
       // If we had a client since before, or if logInLastKnownUserIfPossible succeded
       if (self.client) {
-        [self.client relayRemotePushNotification:dictionaryPayload];
+        id result = [self.client relayRemotePushNotification:dictionaryPayload];
+        if (result && [self.delegate respondsToSelector:@selector(service:didReceiveNotification:)]) {
+          [self.delegate service:self didReceiveNotification:result];
+        }
       }
     } /* else: was not a Sinch push at all? */
   }
