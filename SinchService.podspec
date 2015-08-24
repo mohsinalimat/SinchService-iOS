@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Apache' }
 
   s.source       = { :git => 'https://github.com/sinch/SinchService-iOS.git', :tag => '1.0.2' }
-  s.public_header_files = 'SinchService/SINService.h,SinchService/SinchService.h'
+  s.public_header_files = ['SinchService/SINService.h', 'SinchService/SinchService.h']
   s.source_files = 'SinchService/*.{h,m}'
 
   # shim target for Sinch.framework headers so that #import <Sinch/Sinch.h> works
